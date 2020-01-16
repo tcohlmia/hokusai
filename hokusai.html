@@ -7,6 +7,7 @@
 <body style=’margin : 0px; overflow: hidden;’>
   <a-scene embedded arjs=’sourceType: webcam;’>
     <a-assets>
+      <img id="hokusai" src="hokusai.png">
     </a-assets>
 
     <!-- handle marker with your own pattern -->
@@ -14,10 +15,10 @@
     <a-marker type="pattern" preset="custom" url="pattern-Marker1.patt">
 
       <!-- Red box -->
-      <a-box position='0 0.5 0' material='color: red;'></a-box> <!-- Works! Use often to ensure you're not insane. -->
+      <!-- <a-box position='0 0.5 0' material='color: red;'></a-box> <!-- Works! Use often to ensure you're not insane. --> -->
 
-      <!-- Dino Head -->
-      <a-entity collada-model="url(head.dae)" scale="0.1 0.1 0.1"></a-entity>
+      <!-- Hokusai -->
+      <a-image src="#hokusai" rotation="270 0 0" scale="10 10 10"></a-image>
 
 
     </a-marker>
